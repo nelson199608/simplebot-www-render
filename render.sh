@@ -31,6 +31,8 @@ python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simpl
 python3 -m simplebot -a "$ADDR" plugin --add ./web2pdf.py
 
 # add the web_screenshot plugin
+sudo sysctl -w kernel.unprivileged_userns_clone 
+= 1
 python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/web_screenshot.py'); open('web_screenshot.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./web_screenshot.py
 
