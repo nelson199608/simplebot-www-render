@@ -27,7 +27,7 @@ python3 -m simplebot -a "$ADDR" plugin --add ./youtube.py
 
 # add the web2pdf plugin
 sudo apt-get install wkhtmltopdf
-python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/web2pdf.py'); open('web2pdf.py', 'wt').write(r.content)"
+python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/web2pdf.py'); open('web2pdf.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./web2pdf.py
 
 
