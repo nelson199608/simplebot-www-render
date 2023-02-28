@@ -9,6 +9,7 @@ python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/max_size" "107374182
 python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/delay" $DELAY
 python3 -m simplebot -a "$ADDR" db -s "simplebot_translator/filter_enabled" "no"
 python3 ./restore_keys.py
+python3 ./wiki_search.py
 
 # add the web_comress plugin
 python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/web_compress.py'); open('web_compress.py', 'wb').write(r.content)"
