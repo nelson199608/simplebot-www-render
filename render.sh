@@ -37,14 +37,13 @@ python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simpl
 python3 -m simplebot -a "$ADDR" plugin --add ./web_screenshot.py
 
 
-# add the encryption_error plugin to leverage key changes
-python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/encryption_error.py'); open('encryption_error.py', 'wb').write(r.content)"
-python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
-
-# add the wiki search plugin
+# add the wiki_search plugin
 python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/wiki_search.py'); open('wiki_search.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./wiki_search.py
 
+# add the encryption_error plugin to leverage key changes
+python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/encryption_error.py'); open('encryption_error.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
 
 # add admin plugin
 if [ -n "$ADMIN" ]; then
