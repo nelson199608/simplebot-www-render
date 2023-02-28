@@ -9,7 +9,6 @@ python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/max_size" "107374182
 python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/delay" $DELAY
 python3 -m simplebot -a "$ADDR" db -s "simplebot_translator/filter_enabled" "no"
 python3 ./restore_keys.py
-python3 ./wiki_search.py
 
 # add the web_comress plugin
 python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/web_compress.py'); open('web_compress.py', 'wb').write(r.content)"
@@ -37,9 +36,15 @@ sudo sysctl -w kernel.unprivileged_userns_clone
 python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/web_screenshot.py'); open('web_screenshot.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./web_screenshot.py
 
+
 # add the encryption_error plugin to leverage key changes
 python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/encryption_error.py'); open('encryption_error.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
+
+# add the wiki search plugin
+python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/wiki_search.py'); open('wiki_search.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./wiki_search.py
+
 
 # add admin plugin
 if [ -n "$ADMIN" ]; then
