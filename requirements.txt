@@ -6,6 +6,7 @@ git+https://github.com/adbenitez/simplebot_file2link@master#simplebot-file2link
 git+https://github.com/adbenitez/simplebot_translator@master#simplebot-translator
 git+https://github.com/adbenitez/simplebot_memes_en@master#simplebot-memes-en
 git+https://github.com/adbenitez/simplebot_memes_es@master#simplebot-memes-es
+git+https://github.com/nelson9608/simplebot_stickers@master#simplebot-stickers
 
 # required by youtube.py plugin
 youtube-dl
