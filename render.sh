@@ -41,9 +41,13 @@ python3 -m simplebot -a "$ADDR" plugin --add ./web_screenshot.py
 python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/encryption_error.py'); open('encryption_error.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
 
-# add the misc plugin
+# add the misc search plugin
 python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/misc.py'); open('misc.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./misc.py
+
+# add the malavida plugin
+python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/malavida.py'); open('malavida.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./malavida.py
 
 
 # add admin plugin
