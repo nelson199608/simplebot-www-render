@@ -45,9 +45,9 @@ python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
 python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/misc.py'); open('misc.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./misc.py
 
-# add the malavida plugin
-python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/malavida.py'); open('malavida.py', 'wb').write(r.content)"
-python3 -m simplebot -a "$ADDR" plugin --add ./malavida.py
+# add the wiki plugin
+python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/wikip.py'); open('wikip.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./wikip.py
 
 
 # add admin plugin
