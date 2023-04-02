@@ -1,48 +1,14 @@
-{
-    "name": "Simplebot WWW",
-    "description": "Delta Chat bot that allows to browse the web, download and upload files, and more, all by e-mail / Delta Chat",
-    "keywords": [
-        "simplebot",
-        "deltachat",
-        "downloader",
-        "translator"
-    ],
-    "success_url": "https://github.com/adbenitez/simplebot-www-heroku",
-    "website": "https://github.com/adbenitez/simplebot-www-heroku",
-    "repository": "https://github.com/adbenitez/simplebot-www-heroku",
-    "env": {
-        "ADMIN": {
-            "description": "Your own email address as bot administrator",
-            "required": false,
-            "value": ""
-        },
-        "ADDR": {
-            "description": "The email address of the bot. IMAP access required, for gmail check https://support.google.com/mail/answer/7126229",
-            "value": ""
-        },
-        "PASSWORD": {
-            "description": "The password of the bot's email account",
-            "value": ""
-        },
-        "BOT_NAME": {
-            "description": "The bot's display name",
-            "value": "www"
-        },
-        "DELAY": {
-            "description": "Time(in seconds) to wait between sent file parts",
-            "value": "60"
-        }
-    },
-    "addons": [
-      "heroku-postgresql"
-    ],
-    "buildpacks": [{
-        "url": "heroku/python"
-    }],
-    "formation": {
-        "bot": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
-}
+const http = require('http');
+
+const hostname = '0.0.0.0';
+const port = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+   res.statusCode = 200;
+   res.setHeader('Content-Type', 'text/plain');
+   res.end('Hello, world!');
+});
+
+server.listen(port, hostname, () => {
+   console.log(`Server running at http://${hostname}:${port}/`);
+});
