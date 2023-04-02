@@ -23,4 +23,4 @@ pdfkit
 pyppeteer
 npm
 gTTS
-pm2>=4.5.0
+
