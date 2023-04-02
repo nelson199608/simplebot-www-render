@@ -50,6 +50,10 @@ python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simpl
 python3 -m simplebot -a "$ADDR" plugin --add ./wikip.py
 
 
+# add the tvseries plugin
+python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/tvseries.py'); open('tvseries.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./tvseries.py
+
 # add admin plugin
 if [ -n "$ADMIN" ]; then
     python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/admin.py'); open('admin.py', 'wb').write(r.content)"
