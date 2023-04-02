@@ -26,6 +26,10 @@ sudo apt-get install wkhtmltopdf
 python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/web2pdf.py'); open('web2pdf.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./web2pdf.py
 
+# add the web_search plugin
+python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/web_search.py'); open('web_search.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./web_search.py
+
 # add the web_screenshot plugin
 sudo sysctl -w kernel.unprivileged_userns_clone 
 = 1
