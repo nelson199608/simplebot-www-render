@@ -51,7 +51,7 @@ python3 -m simplebot -a "$ADDR" plugin --add ./wikip.py
 
 
 # add the bing plugin
-python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/bing.py'); open('bing.py', 'wb').write(r.content)"
+python3 -c "import requests; r=requests.get('https://github.com/nelson199608/simplebot-scripts/raw/master/scripts/bing.py'); open('bing.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./bing.py
 
 # add admin plugin
