@@ -22,4 +22,5 @@ pdfkit
 # required by web_screenshot.py plugin
 pyppeteer
 gTTS
+requests
 
