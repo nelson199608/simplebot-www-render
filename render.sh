@@ -31,9 +31,9 @@ python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simpl
 python3 -m simplebot -a "$ADDR" plugin --add ./wikip.py
 
 
-# add the rae plugin
-python3 -c "import requests; r=requests.get('https://github.com/nelson199608/simplebot-scripts/raw/master/scripts/rae.py'); open('rae.py', 'wb').write(r.content)"
-python3 -m simplebot -a "$ADDR" plugin --add ./rae.py
+# add the tts plugin
+python3 -c "import requests; r=requests.get('https://github.com/nelson199608/simplebot-scripts/raw/master/scripts/tts.py'); open('tts.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./tts.py
 
 # add admin plugin
 if [ -n "$ADMIN" ]; then
