@@ -20,7 +20,6 @@ pyppeteer
 gtts
 requests
 bs4
-os
 Simplebot
 deltachat 
 
