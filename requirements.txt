@@ -19,8 +19,6 @@ pdfkit
 pyppeteer
 gtts
 requests
-bs4
-Simplebot
-deltachat 
+translate
 
 
