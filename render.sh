@@ -22,8 +22,8 @@ python3 -m simplebot -a "$ADDR" plugin --add ./web_search.py
 
 
 # add the encryption_error plugin to leverage key changes
-python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/encryption_error.py'); open('encryption_error.py', 'wb').write(r.content)"
-python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
+# python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/encryption_error.py'); open('encryption_error.py', 'wb').write(r.content)"
+# python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
 
 
 # add the wiki plugin
