@@ -27,8 +27,13 @@ python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
 
 
 # add the wiki plugin
-python3 -c "import requests; r=requests.get('https://github.com/nelson199608/simplebot-scripts/raw/master/scripts/wikip.py'); open('wikip.py', 'wb').write(r.content)"
+python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/wikip.py'); open('wikip.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./wikip.py
+
+# add the news plugin
+python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/news.py'); open('news.py', 'wb').write(r.content)"
+python3 -m simplebot -a "$ADDR" plugin --add ./news.py
+
 
 # add admin plugin
 if [ -n "$ADMIN" ]; then
