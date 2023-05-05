@@ -25,3 +25,4 @@ simplebot
 translate
 wikipedia 
 deltabot
+bs4
