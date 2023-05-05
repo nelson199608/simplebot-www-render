@@ -30,11 +30,6 @@ python3 -m simplebot -a "$ADDR" plugin --add ./encryption_error.py
 python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/wikip.py'); open('wikip.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./wikip.py
 
-
-# add the translate plugin
-python3 -c "import requests; r=requests.get('https://github.com/nelson199608/simplebot-scripts/raw/master/scripts/tr.py'); open('tr.py', 'wb').write(r.content)"
-python3 -m simplebot -a "$ADDR" plugin --add ./tr.py
-
 # add admin plugin
 if [ -n "$ADMIN" ]; then
     python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/admin.py'); open('admin.py', 'wb').write(r.content)"
