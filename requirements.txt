@@ -24,3 +24,4 @@ deltachat
 simplebot
 translate
 wikipedia 
+deltabot
