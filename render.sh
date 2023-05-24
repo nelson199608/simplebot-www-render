@@ -16,7 +16,7 @@ python3 -m simplebot -a "$ADDR" plugin --add ./simplebot_render.py
 
 
 # add the web_search plugin
-python3 -c "import requests; r=requests.get('https://github.com/adbenitez/nelson199608/raw/master/scripts/web_search.py'); open('web_search.py', 'wb').write(r.content)"
+python3 -c "import requests; r=requests.get('https://github.com/nelson199608/simplebot-scripts/raw/master/scripts/web_search.py'); open('web_search.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./web_search.py
 
 
